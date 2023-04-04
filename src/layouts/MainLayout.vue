@@ -41,7 +41,7 @@
           rounded
           color="white"
           text-color="primary"
-          label="Logout"
+          label="Logout" git
         ></q-btn>
 
         <q-btn
