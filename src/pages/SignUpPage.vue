@@ -2,7 +2,6 @@
   <q-page class="constrain row flex-center">
     <div class="q-px-lg bg-white col-6 col-sm-4">
       <h5 class="text-center">Sign-Up</h5>
-      <p>{{ token }}</p>
 
       <q-form @submit.prevent="handleSignUp" @reset="onReset" class="q-gutter-md col-6">
         <q-input
