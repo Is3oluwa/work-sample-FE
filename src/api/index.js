@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: 'https://work-sample-be.onrender.com',
+  baseURL: 'https://work-sample-api.onrender.com',
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',
