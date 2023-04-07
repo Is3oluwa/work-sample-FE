@@ -17,8 +17,9 @@
           outlined
           v-model="phoneNo"
           label="Enter your Phone No"
+          hint="Enter valid phone number"
           lazy-rules
-          :rules="[(val) => (val && val.length > 0) || 'Please type something']"
+          :rules="[(val) => (val && val.length >= 11) || 'Enter valid phone number']"
         />
 
         <q-input
@@ -26,7 +27,7 @@
           v-model="email"
           label="Enter your E-mail"
           lazy-rules
-          :rules="[(val) => (val && val.length > 0) || 'Please type something']"
+          :rules="[(val) => (val && val.length > 0) || 'Please type your email']"
         />
 
         <q-input
@@ -38,10 +39,10 @@
         >
           <template v-slot:append>
             <q-icon
-              :name="isPwd ? 'visibility_off' : 'visibility'"
-              class="cursor-pointer"
-              @click="isPwd = !isPwd"
-            />
+            :name="isPwd ? 'visibility_off' : 'visibility'"
+            class="cursor-pointer"
+            @click="isPwd = !isPwd"
+          />
           </template>
         </q-input>
 
@@ -84,6 +85,7 @@ export default defineComponent({
 
       const res = await apiClient.post("/auth/signup/user", formData);
       this.token = res.data;
+      this.$router.push('/login')
     },
   },
 });
