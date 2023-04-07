@@ -5,7 +5,6 @@ const apiClient = axios.create({
   headers: {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
-    'Access-Control-Allow-Origin': 'https://work-sample-api.onrender.com',
   }
 });
 
