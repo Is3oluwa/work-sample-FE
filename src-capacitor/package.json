@@ -1,0 +1,12 @@
+{
+  "name": "quasar-project",
+  "version": "0.0.1",
+  "description": "Sample Quasar project for B54",
+  "author": "Iseoluwa <<iseoyedotun@gmail.com>>",
+  "private": true,
+  "dependencies": {
+    "@capacitor/android": "^2.5.0",
+    "@capacitor/cli": "^2.0.0",
+    "@capacitor/core": "^2.0.0"
+  }
+}

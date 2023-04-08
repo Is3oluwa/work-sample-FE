@@ -1,0 +1,10 @@
+{
+  "appId": "worksample.capacitor.quasar.app",
+  "appName": "Work Sample",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "server": {
+    "url": "https://work-sample-ecommerce.netlify.app/"
+  }
+}

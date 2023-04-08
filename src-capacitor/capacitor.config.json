@@ -1,0 +1,7 @@
+{
+  "appId": "worksample.capacitor.quasar.app",
+  "appName": "Work Sample",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}
